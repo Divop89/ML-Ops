@@ -1,0 +1,10 @@
+[2024-09-28 12:32:49,612] 21 root - INFO - This is an INFO message.
+[2024-09-28 12:32:49,613] 22 root - WARNING - This is a WARNING message.
+[2024-09-28 12:32:49,613] 23 root - ERROR - This is an ERROR message.
+[2024-09-28 12:32:49,613] 24 root - CRITICAL - This is a CRITICAL message.
+[2024-09-28 12:32:51,869] 24 root - INFO - data ingestion started
+[2024-09-28 12:32:53,319] 27 root - INFO -  reading a df
+[2024-09-28 12:32:54,037] 31 root - INFO -  i have saved the raw dataset in artifact folder
+[2024-09-28 12:32:54,037] 33 root - INFO - here i will perform train test split
+[2024-09-28 12:32:54,053] 35 root - INFO - train test split completed
+[2024-09-28 12:32:54,838] 40 root - INFO - data ingestion part completed

@@ -1,0 +1,32 @@
+[2024-09-28 13:44:51,679] 21 root - INFO - This is an INFO message.
+[2024-09-28 13:44:51,679] 22 root - WARNING - This is a WARNING message.
+[2024-09-28 13:44:51,679] 23 root - ERROR - This is an ERROR message.
+[2024-09-28 13:44:51,679] 24 root - CRITICAL - This is a CRITICAL message.
+[2024-09-28 13:45:00,586] 24 root - INFO - data ingestion started
+[2024-09-28 13:45:05,024] 27 root - INFO -  reading a df
+[2024-09-28 13:45:07,396] 31 root - INFO -  i have saved the raw dataset in artifact folder
+[2024-09-28 13:45:07,396] 33 root - INFO - here i will perform train test split
+[2024-09-28 13:45:07,452] 35 root - INFO - train test split completed
+[2024-09-28 13:45:10,248] 40 root - INFO - data ingestion part completed
+[2024-09-28 13:45:10,675] 87 root - INFO - read train and test data complete
+[2024-09-28 13:45:10,685] 88 root - INFO - Train Dataframe Head : 
+       id  carat        cut color clarity  depth  table     x     y     z  price
+0  119291   0.74      Ideal     H    VVS1   63.2   54.0  5.77  5.72  3.63   3088
+1  119914   0.41    Premium     E     VS2   62.0   58.0  4.74  4.78  2.95    935
+2   58612   0.57    Premium     F     VS1   62.4   58.0  5.26  5.30  3.28   1915
+3   25204   0.51      Ideal     D     SI1   60.2   57.0  5.22  5.25  3.16   1658
+4  144460   0.30  Very Good     D     SI1   61.2   60.0  4.23  4.26  2.59    552
+[2024-09-28 13:45:10,685] 89 root - INFO - Test Dataframe Head : 
+       id  carat        cut color clarity  depth  table     x     y     z  price
+0   92627   1.23    Premium     H     SI2   61.0   58.0  6.94  6.91  4.22   5820
+1   51047   0.54    Premium     G     VS1   61.2   59.0  5.28  5.25  3.22   1708
+2   13765   0.53  Very Good     F     SI2   63.2   58.0  5.12  5.16  3.24   1142
+3   98812   0.30      Ideal     F     VS2   62.9   56.0  4.28  4.30  2.69    776
+4  149329   0.42      Ideal     F     VS2   61.2   56.0  4.83  4.86  2.96    931
+[2024-09-28 13:45:10,685] 32 root - INFO - Data Transformation initiated
+[2024-09-28 13:45:10,685] 43 root - INFO - Pipeline Initiated
+[2024-09-28 13:45:11,281] 107 root - INFO - Applying preprocessing object on training and testing datasets.
+[2024-09-28 13:45:11,298] 117 root - INFO - preprocessing pickle file saved
+[2024-09-28 13:45:11,302] 26 root - INFO - Splitting Dependent and Independent variables from train and test data
+[2024-09-28 13:45:13,067] 44 root - INFO - Model Report : {'LinearRegression': 0.9371444633561085, 'Lasso': 0.9371082694890402, 'Ridge': 0.9371461821453722, 'Elasticnet': 0.8557704845831959}
+[2024-09-28 13:45:13,076] 57 root - INFO - Best Model Found , Model Name : Ridge , R2 Score : 0.9371461821453722
